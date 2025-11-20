@@ -1,5 +1,5 @@
 <?php
-$dbPath = __DIR__ . '/../../db/sqlite.db';
+$dbPath = __DIR__ . '/sqlite.db';
 
 try {
     $db = new SQLite3($dbPath);
