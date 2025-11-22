@@ -65,6 +65,7 @@ button {
     cursor: pointer;
     background: rgb(30,130,130);
     color: #fff;
+    display: block;
 }
 
 button:hover {
@@ -98,6 +99,24 @@ blockquote {
     padding-left: 15px;
     color: #aaa;
     font-style: italic;
+}
+
+figure {
+    border: 1px solid #333;
+    margin: 0px;
+}
+
+figcaption {
+    padding: 2px;
+    text-align: center;
+    font-size: 16px;
+    color: #ccc;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
 }
 
 /**************/
@@ -234,6 +253,30 @@ form .helper-text {
     text-align: right !important;
 }
 
+input[type="file"]::file-selector-button {
+    background: rgb(30,130,130);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background: rgb(10,110,110);
+}
+
+/* checkbox */
+input[type="checkbox"] {
+    width: auto;
+    margin-bottom: 25px;
+    transform: scale(1.5);
+    position: relative;
+    bottom: 8px;
+    accent-color: rgb(30,130,130);
+}
+
 /**************/
 /*** Tables ***/
 /**************/
@@ -331,4 +374,32 @@ main.centered-page p {
     border: 1px solid #55ff55;
     background: #003300;
     color: #aaffaa;
+}
+
+.figure-right, .img-right {
+    display: block;
+    float: right;
+    max-width: 40%;
+    padding: 5px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.figure-left, .img-left {
+    display: block;
+    float: left;
+    max-width: 40%;
+    padding: 5px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 700px) {
+    .figure-right, .img-right, .figure-left, .img-left {
+        float: none;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
 }
