@@ -166,6 +166,25 @@
         </fieldset>
     </form>
 
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <style>
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(0%,1fr));
+        gap: 10px;
+    }
+
+    .grid > div {
+        background-color: #111;
+        padding: 20px;
+        text-align: center;
+    }
+    </style>
+
 </main>
 
 <footer>
@@ -175,6 +194,7 @@
             <li><a href="">Privacy</a></li>
             <li><a href="">Contact</a></li>
         </ul>
+    </nav>
 </footer>
 
 </body>

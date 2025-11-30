@@ -80,6 +80,7 @@ button:hover {
 button:disabled {
     background: #444;
     cursor: not-allowed;
+    color: #bbb;
 }
 
 button ~ button {
@@ -316,9 +317,10 @@ input[type="checkbox"] {
 
 /* disabled inputs */
 input:disabled, select:disabled, textarea:disabled {
-    background: #222;
+    background: #333;
     color: #666;
     cursor: not-allowed;
+    border: 1px solid #444;
 }
 
 /* range slider */

@@ -21,4 +21,4 @@
 - Progress bar and loading
 - Inline text elements
 - Inputs nested in labels?
-- Sample pages - products, search, etc.
+- Sample pages - new/blog, products/menu/search, chat etc.
