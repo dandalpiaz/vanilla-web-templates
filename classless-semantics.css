@@ -33,6 +33,10 @@ main ol li, main ul li {
     margin-bottom: 7px;
 }
 
+main ul, main ol {
+    padding-left: 30px;
+}
+
 ul ul, ol ol, ul ol, ol ul {
     margin-top: 7px;
 }
@@ -60,6 +64,14 @@ h3 {
 
 h4 {
     font-size: 23px;
+}
+
+h5 {
+    font-size: 19px;
+}
+
+h6 {
+    font-size: 16px;
 }
 
 button {
@@ -315,7 +327,6 @@ input[type="checkbox"] {
     accent-color: rgb(30,130,130);
 }
 
-/* disabled inputs */
 input:disabled, select:disabled, textarea:disabled {
     background: #333;
     color: #666;
@@ -323,32 +334,27 @@ input:disabled, select:disabled, textarea:disabled {
     border: 1px solid #444;
 }
 
-/* range slider */
 input[type="range"] {
     width: 100%;
     accent-color: rgb(30,130,130);
 }
 
-/* color picker */
 input[type="color"] {
     padding: 3px;
     height: 40px;
 }
 
-/* date picker icon color */
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
 
-/* time picker icon color */
 input[type="time"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
 
-/* radio buttons */
 input[type="radio"] {
     width: auto;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     transform: scale(1.5);
     position: relative;
     bottom: 4px;
@@ -380,6 +386,11 @@ table caption {
     caption-side: top;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+tfoot td {
+    font-weight: bold;
+    background: #222;
 }
 
 /**************/
