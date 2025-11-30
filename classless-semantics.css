@@ -304,6 +304,11 @@ form .helper-text {
     text-align: right !important;
 }
 
+/* input search */
+input[type="search"] {
+    border-radius: 25px;
+}
+
 input[type="file"]::file-selector-button {
     background: rgb(30,130,130);
     color: #fff;
@@ -513,4 +518,15 @@ main.centered-page p {
         margin-right: auto;
         text-align: center;
     }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 10px;
+}
+
+.grid > div {
+    background-color: #111;
+    padding: 10px;
 }
