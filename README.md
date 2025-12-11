@@ -11,7 +11,7 @@
 - Add a 'Getting Started' section
 - Create a separate elements page with TOC?
 - Inputs nested in labels?
-- Sample pages - article/blog, products/menu/search (grids), chat, CRUD (modal, page, sidebar), posts/comments, etc.
+- Sample pages - article/blog, products/menu/search (grids), chat, CRUD (modal, page, sidebar), team, posts/comments, etc.
 
 ### Remaining Elements (review)
 

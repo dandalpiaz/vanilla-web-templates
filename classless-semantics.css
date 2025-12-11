@@ -23,7 +23,6 @@ body {
 }
 
 body > main, body > header, body > footer {
-    /*max-width: 1000px;*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -47,18 +46,21 @@ aside {
     margin-top: 15px;
     margin-bottom: 15px;
     float: left;
-    width: 250px;
+    width: 300px;
     margin-right: 25px;
     clear: both;
-    /*height: calc(100vh - 100px);*/
 }
 
-aside:has(details:not([open])) {
+aside:has(> details:not([open])) {
     width: 100%; 
 }
 
-aside:has(details:not([open])) ~ main {
+aside:has(> details:not([open])) ~ main {
     clear: both;
+}
+
+aside summary + * {
+    margin-top: 20px;
 }
 
 aside ~ main {
