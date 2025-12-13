@@ -1,18 +1,18 @@
 
-# classless-semantics.css
+# vanilla-web-templates
 
 ## Todo
 
-- Test sidebar on a sample page
+- Fix overflow focus state cutoff
 - Light mode
 - Hover states
 - Add syntax highlighting for code blocks
 - Validation messages (where?)
-- Add a 'Getting Started' section
+- Add a 'Getting Started' section/page
 - Inputs nested in labels?
 - Search button next to input
 - Pagination styles
-- Sample pages - article/blog, products/menu/search (grids), cart, chat, CRUD (modal, page, sidebar), team, posts/comments, media player, etc.
+- Sample template ideas - article/blog, products/menu/search (grids), cart, chat, CRUD (modal, page, sidebar), team, posts/comments, media player, org chart, search results, etc.
 
 ### Remaining Elements (review)
 

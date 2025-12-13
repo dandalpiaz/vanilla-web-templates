@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>classless-semantics.css</title>
+    <title>vanilla-web-templates.css</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
-    <link rel="stylesheet" type="text/css" href="../classless-semantics.css">
-    <script src="../classless-semantics.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../vanilla-web-templates.css">
+    <script src="../vanilla-web-templates.js" defer></script>
 </head>
 <body>
 
 <a href="#main" id="skip-to-main">Skip to main content</a>
 
 <header>
-    <a href="../index.html">👋 classless-semantics.css</a>
+    <a href="../index.html"><img src="../images/vanilla.png" id="example-site-icon" />vanilla-web-templates</a>
     <nav aria-label="Main Navigation">
         <ul>
-            <li><a href="article.html">Article</a>
-            <li><a href="posts.html">Posts</a></li>
-            <li><a href="grid.html">Grid</a></li>
-            <li><a href="crud.html">CRUD</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Log In</a></li>
+            <li><a href="">Get Started</a></li>
+            <li><a href="">Templates</a></li>
+            <li><a href="">GitHub</a></li>
         </ul>
     </nav>
     <details>
         <summary> Menu </summary>
         <nav aria-label="Main Navigation">
             <ul>
-                <li><a href="article.html">Article</a>
-                <li><a href="posts.html">Posts</a></li>
-                <li><a href="grid.html">Grid</a></li>
-                <li><a href="crud.html">CRUD</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Log In</a></li>
+                <li><a href="">Get Started</a></li>
+                <li><a href="">Templates</a></li>
+                <li><a href="">GitHub</a></li>
             </ul>
         </nav>
     </details>
@@ -48,19 +42,19 @@
 
         <p>Use the options below to search, sort, or filter posts.</p>
 
-        <label for="sample-search">Search Posts:</label>
-        <input type="search" id="sample-search" placeholder="Search...">
+        <label for="posts-search">Search Posts:</label>
+        <input type="search" name="posts-search" id="posts-search" placeholder="Search...">
         
-        <label>Sort Posts By:</label>
-        <select>
+        <label for="posts-sort">Sort Posts By:</label>
+        <select id="posts-sort" name="posts-sort">
             <option>Hot</option>
             <option>New</option>
             <option>Top</option>
             <option>Rising</option>
         </select>
 
-        <label>Show Posts From:</label>
-        <select>
+        <label for="posts-from">Show Posts From:</label>
+        <select id="posts-from" name="posts-from">
             <option>Default</option>
             <option>All time</option>
             <option>Past 24 hours</option>
