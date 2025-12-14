@@ -5,11 +5,11 @@ WIP
 
 ## Todo
 
-- Search button next to input
-- Add syntax highlighting for code blocks (in JS file)
 - Clean up CSS
 - Light mode (set variables)
+- Add syntax highlighting for code blocks (in JS file)
 - Check hover states
+- Search button next to input
 - Validation messages (where?)
 - Inputs nested in labels?
 - Pagination styles
