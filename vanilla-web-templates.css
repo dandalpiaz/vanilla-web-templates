@@ -14,7 +14,7 @@
 body {
     background: black;
     color: #eee;
-    padding: 20px;
+    padding: 20px 18px;
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     line-height: 1.7;
@@ -25,6 +25,8 @@ body {
 body > main, body > header, body > footer {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 main {
@@ -49,6 +51,8 @@ aside {
     width: 300px;
     margin-right: 25px;
     clear: both;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 aside:has(> details:not([open])) {
@@ -433,6 +437,10 @@ input:disabled, select:disabled, textarea:disabled {
     color: #666;
     cursor: not-allowed;
     border: 1px solid #444;
+}
+
+select:disabled {
+    opacity: 1.0;
 }
 
 input[type="range"] {
