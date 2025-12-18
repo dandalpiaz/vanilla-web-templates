@@ -8,12 +8,12 @@ document.addEventListener('click', (event) => {
 });
 
 // Close details in aside on mobile, by default
-if (window.innerWidth < 750) {
+/*if (window.innerWidth < 750) {
   const asideDetails = document.querySelector('aside details');
   if (asideDetails) {
     asideDetails.removeAttribute('open');
   }
-}
+}*/
 
 // Close dialog when clicking outside of it
 document.addEventListener('click', (event) => {

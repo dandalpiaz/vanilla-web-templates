@@ -69,14 +69,14 @@
 
 <main id="main">
 
-    <div role="alert" class="yellow-alert">Sample page, forms do not function</div>
+    <!--<div role="alert" class="yellow-alert">Sample page, forms do not function</div>-->
 
-    <h1>Posts Aggregator</h1>
+    <h1>Posts Aggregator (template)</h1>
 
     <div style="margin-bottom: 15px; margin-top: 15px;">
         <img style="float: left;" src="https://picsum.photos/id/1011/77/77" alt="Placeholder image example" />
         <div style="vertical-align: top; margin-left: 90px; position: relative; bottom: 8px;">
-            <a href="#" style="text-decoration: none;  font-weight: 400;">A Sample Post Title Goes Here and Also Here</a><br>
+            <a href="#" style="text-decoration: none;  font-weight: 500;">A Sample Post Title Goes Here and Also Here</a><br>
             <small style="font-weight: 400;">9 hours ago by testuser to r/test</small><br>
             <small>123 comments // ▲ 456 upvotes</small>
         </div>
@@ -85,7 +85,7 @@
     <div style="margin-bottom: 15px;">
         <img style="float: left;" src="https://picsum.photos/id/1012/77/77" alt="Placeholder image example" />
         <div style="vertical-align: top; margin-left: 90px; position: relative; bottom: 8px;">
-            <a href="#" style="text-decoration: none;  font-weight: 400;">Another Sample Post Title Goes Here and Also Here</a><br>
+            <a href="#" style="text-decoration: none;  font-weight: 500;">Another Sample Post Title Goes Here and Also Here</a><br>
             <small style="font-weight: 400;">1 day ago by anotheruser to r/test</small><br>
             <small>78 comments // ▲ 123 upvotes</small>
         </div>
@@ -94,7 +94,7 @@
     <div style="margin-bottom: 15px;">
         <img style="float: left;" src="https://picsum.photos/id/1013/77/77" alt="Placeholder image example" />
         <div style="vertical-align: top; margin-left: 90px; position: relative; bottom: 8px;">
-            <a href="#" style="text-decoration: none;  font-weight: 400;">Yet Another Sample Post Title Goes Here and Also Here</a><br>
+            <a href="#" style="text-decoration: none;  font-weight: 500;">Yet Another Sample Post Title Goes Here and Also Here</a><br>
             <small style="font-weight: 400;">3 days ago by sampleuser to r/test</small><br>
             <small>34 comments // ▲ 89 upvotes</small>
         </div>
@@ -111,6 +111,15 @@
         </ul>
     </nav>
 </footer>
+
+<script>
+if (window.innerWidth < 750) {
+  const asideDetails = document.querySelector('aside details');
+  if (asideDetails) {
+    asideDetails.removeAttribute('open');
+  }
+}
+</script>
 
 </body>
 </html>
