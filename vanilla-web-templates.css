@@ -109,7 +109,7 @@ body {
     padding: 20px 18px;
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.75;
     margin: 0px;
     overflow-wrap: break-word;
 }
@@ -126,6 +126,10 @@ main {
     margin-top: 50px;
     display: block;
     overflow: auto;
+}
+
+p {
+    margin-bottom: 25px;
 }
 
 main ol li, main ul li {
@@ -246,7 +250,8 @@ code {
     background: var(--code-bg-color);
     color: var(--code-text-color);
     font-size: 17px;
-    padding: 1px;
+    padding: 3px;
+    border-radius: 3px;
 }
 
 pre {
@@ -275,6 +280,7 @@ blockquote {
     border-left: 4px solid var(--blockquote-border-color);
     margin-left: 0;
     margin-right: 0;
+    padding: 1px;
     padding-left: 15px;
     color: var(--blockquote-text-color);
     font-style: italic;
