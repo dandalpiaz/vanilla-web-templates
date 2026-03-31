@@ -7,7 +7,6 @@
     <meta name="description" content="">
     <link rel="icon" type="image/png" href="../images/favicon.png">
     <link rel="stylesheet" type="text/css" href="../vanilla-web-templates.css">
-    <script src="../vanilla-web-templates.js"></script>
 </head>
 <body>
 
@@ -20,7 +19,7 @@
             <li><a href="../index.html#templates">Templates</a></li>
             <li><a href="../index.html#usage">Usage</a></li>
             <li><a href="https://github.com/dandalpiaz/vanilla-web-templates">GitHub</a></li>
-            <li><button id="light-toggle" onclick="toggleLight()" aria-label="toggle color mode">🌗</button></li>
+            <li><button class="light-toggle" onclick="toggleLight()" aria-label="switch to light mode">🌗</button></li>
         </ul>
     </nav>
     <details>
@@ -30,7 +29,7 @@
                 <li><a href="../index.html#templates">Templates</a></li>
                 <li><a href="../index.html#usage">Usage</a></li>
                 <li><a href="https://github.com/dandalpiaz/vanilla-web-templates">GitHub</a></li>
-                <li><button id="light-toggle" onclick="toggleLight()" aria-label="toggle color mode">🌗</button></li>
+                <li><button class="light-toggle" onclick="toggleLight()" aria-label="switch to light mode">🌗</button></li>
             </ul>
         </nav>
     </details>
@@ -42,22 +41,16 @@
 
     <h1>Log In (template)</h1>
 
-    <p>Use the form below to login in with your email address.</p>
+    <p>All fields marked with * are required.</p>
 
-    <form action="">
-        <fieldset>
-            <legend>Log In</legend>
+    <form action="" style="max-width: 350px; margin: auto;">
+        <label for="email">Email Address*</label>
+        <input type="email" id="email" placeholder="jane.doe@gmail.com" required>
 
-            <label for="email">Email Address*</label>
-            <input type="email" id="email" placeholder="jane.doe@gmail.com" aria-describedby="helper1" required>
-            <p id="helper1" class="helper-text">(*required)</p>
+        <label for="password">Password*</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
 
-            <label for="password">Password*</label>
-            <input type="password" id="password" placeholder="Enter your password" aria-describedby="helper2" required>
-            <p id="helper2" class="helper-text">(*required)</p>
-
-            <button type="submit">Log In</button>
-        </fieldset>
+        <button type="submit" style="width: 100%; margin-top: 15px;">Log In</button>
     </form>
 
 </main>
@@ -72,6 +65,7 @@
     </nav>
 </footer>
 
+<script src="../vanilla-web-templates.js"></script>
 </body>
 </html>
 

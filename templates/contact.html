@@ -7,7 +7,6 @@
     <meta name="description" content="">
     <link rel="icon" type="image/png" href="../images/favicon.png">
     <link rel="stylesheet" type="text/css" href="../vanilla-web-templates.css">
-    <script src="../vanilla-web-templates.js"></script>
 </head>
 <body>
 
@@ -20,7 +19,7 @@
             <li><a href="../index.html#templates">Templates</a></li>
             <li><a href="../index.html#usage">Usage</a></li>
             <li><a href="https://github.com/dandalpiaz/vanilla-web-templates">GitHub</a></li>
-            <li><button id="light-toggle" onclick="toggleLight()" aria-label="toggle color mode">🌗</button></li>
+            <li><button class="light-toggle" onclick="toggleLight()" aria-label="switch to light mode">🌗</button></li>
         </ul>
     </nav>
     <details>
@@ -30,7 +29,7 @@
                 <li><a href="../index.html#templates">Templates</a></li>
                 <li><a href="../index.html#usage">Usage</a></li>
                 <li><a href="https://github.com/dandalpiaz/vanilla-web-templates">GitHub</a></li>
-                <li><button id="light-toggle" onclick="toggleLight()" aria-label="toggle color mode">🌗</button></li>
+                <li><button class="light-toggle" onclick="toggleLight()" aria-label="switch to light mode">🌗</button></li>
             </ul>
         </nav>
     </details>
@@ -42,37 +41,31 @@
 
     <h1>Contact Us (template)</h1>
 
-    <p>Use the form below to send us a message!</p>
+    <p>All fields marked with * are required.</p>
 
     <form action="">
-        <fieldset>
-            <legend>Contact Us</legend>
+        <label for="email">Email Address*</label>
+        <input type="email" id="email" placeholder="jane.doe@gmail.com" required>
 
-            <label for="email">Email Address*</label>
-            <input type="email" id="email" placeholder="jane.doe@gmail.com" aria-describedby="helper1" required>
-            <p id="helper1" class="helper-text">(*required)</p>
+        <label for="subject">Subject*</label>
+        <select id="subject" required>
+            <!--<option value="" disabled selected>Select a subject</option>-->
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback</option>
+        </select>
 
-            <label for="subject">Subject*</label>
-            <select id="subject" aria-describedby="helper2" required>
-                <!--<option value="" disabled selected>Select a subject</option>-->
-                <option value="general">General Inquiry</option>
-                <option value="support">Support</option>
-                <option value="feedback">Feedback</option>
-            </select>
-            <p id="helper2" class="helper-text">(*required)</p>
+        <label for="message">Your Message*</label>
+        <textarea id="message" placeholder="Type your message here..." minlength="1" maxlength="2000" aria-describedby="helper3" required></textarea>
+        <p id="helper3" class="helper-text">(2000 characters maximum)</p>
 
-            <label for="message">Your Message*</label>
-            <textarea id="message" placeholder="Type your message here..." minlength="1" maxlength="2000" aria-describedby="helper3" required></textarea>
-            <p id="helper3" class="helper-text">(*required, 2000 charaters maximumu)</p>
+        <label for="attachment">Attachment</label>
+        <input type="file" id="attachment">
 
-            <label for="attachment">Attachment</label>
-            <input type="file" id="attachment">
+        <label for="subscribe">Subscribe to our newsletter</label>
+        <input type="checkbox" id="subscribe" checked>
 
-            <label for="subscribe">Subscribe to our newsletter</label>
-            <input type="checkbox" id="subscribe" checked>
-
-            <button type="submit">Send</button>
-        </fieldset>
+        <button type="submit" style="width: 100%;">Send</button>
     </form>
 
 </main>
@@ -87,5 +80,6 @@
     </nav>
 </footer>
 
+<script src="../vanilla-web-templates.js"></script>
 </body>
 </html>

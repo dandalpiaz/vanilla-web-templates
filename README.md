@@ -5,7 +5,8 @@ WIP
 
 ## Todo
 
-- Form validation error/success messages (aria-invalid, aria-describedby, aria-live)
+- Form validation error/success messages (aria-invalid +CSS, aria-describedby, aria-live)
+- Test fieldset for groups of checkboxes/radio buttons
 - Add syntax highlighting for code blocks (in JS file)
 - Search button next to input
 - Drop-down menus

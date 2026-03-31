@@ -482,7 +482,8 @@ fieldset {
 label {
     font-size: 16px;
     display: block;
-    margin-bottom: 7px;
+    margin-bottom: 3px;
+    margin-top: 10px;
 }
 
 input, select, textarea {
@@ -765,7 +766,7 @@ main.centered-page p {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
     gap: 20px;
     margin-top: 20px;
 }
@@ -789,13 +790,13 @@ main.centered-page p {
     width: 15px;
 }
 
-#light-toggle {
+.light-toggle {
     padding: 0px;
     display: inline-block;
-    background: none;
+    background: none !important;
 }
 
-header details #light-toggle {
+header details .light-toggle {
     padding: 10px 15px;
     width: 100%;
 }

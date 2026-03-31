@@ -7,7 +7,6 @@
     <meta name="description" content="">
     <link rel="icon" type="image/png" href="../images/favicon.png">
     <link rel="stylesheet" type="text/css" href="../vanilla-web-templates.css">
-    <script src="../vanilla-web-templates.js"></script>
 </head>
 <body>
 
@@ -20,7 +19,7 @@
             <li><a href="../index.html#templates">Templates</a></li>
             <li><a href="../index.html#usage">Usage</a></li>
             <li><a href="https://github.com/dandalpiaz/vanilla-web-templates">GitHub</a></li>
-            <li><button id="light-toggle" onclick="toggleLight()" aria-label="toggle color mode">🌗</button></li>
+            <li><button class="light-toggle" onclick="toggleLight()" aria-label="switch to light mode">🌗</button></li>
         </ul>
     </nav>
     <details>
@@ -30,7 +29,7 @@
                 <li><a href="../index.html#templates">Templates</a></li>
                 <li><a href="../index.html#usage">Usage</a></li>
                 <li><a href="https://github.com/dandalpiaz/vanilla-web-templates">GitHub</a></li>
-                <li><button id="light-toggle" onclick="toggleLight()" aria-label="toggle color mode">🌗</button></li>
+                <li><button class="light-toggle" onclick="toggleLight()" aria-label="switch to light mode">🌗</button></li>
             </ul>
         </nav>
     </details>
@@ -53,27 +52,23 @@
 
         <h2>Add/Edit Staff Member</h2>
 
+        <p>All fields marked with * are required.</p>
+
         <form>
-            <fieldset>
-                <legend>Add/Edit Staff Member</legend>
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
 
-                <label for="name">Name*</label>
-                <input type="text" id="name" name="name" placeholder="Jane Doe" aria-describedby="helper1" required />
-                <p id="helper1" class="helper-text">(*required)</p>
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" placeholder="janedoe@gmail.com" required />
 
-                <label for="email">Email Address*</label>
-                <input type="email" id="email" name="email" placeholder="janedoe@gmail.com" aria-describedby="helper2" required />
-                <p id="helper2" class="helper-text">(*required)</p>
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" placeholder="555-123-4567" aria-describedby="helper3" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+            <p id="helper3" class="helper-text">(format: ###-###-####)</p>
 
-                <label for="phone">Phone Number*</label>
-                <input type="tel" id="phone" name="phone" placeholder="555-123-4567" aria-describedby="helper3" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
-                <p id="helper3" class="helper-text">(*required), format: 555-123-4567</p>
+            <input type="hidden" id="user-id" name="user-id" />
 
-                <input type="hidden" id="user-id" name="user-id" />
-
-                <button type="submit">Submit</button>
-                <button class="cancel-btn" onclick="document.getElementById('sample-modal').close();">Cancel</button>
-            </fieldset>
+            <button type="submit">Submit</button>
+            <button class="cancel-btn" onclick="document.getElementById('sample-modal').close();">Cancel</button>
         </form>
     </dialog>
 
@@ -237,8 +232,8 @@ document.querySelector('#sample-modal form').addEventListener('submit', function
             <td>${email}</td>
             <td>${phone}</td>
             <td>
-                <button>Edit</button>
-                <button>Delete</button>
+                <button aria-label='Edit ${name}'>Edit</button>
+                <button aria-label='Delete ${name}' class="delete-btn">Delete</button>
             </td>
         `;
         tbody.appendChild(newRow);
@@ -265,6 +260,8 @@ document.querySelector('table tbody').addEventListener('click', function(event) 
 });
 
 </script>
+
+<script src="../vanilla-web-templates.js"></script>
 </body>
 </html>
 

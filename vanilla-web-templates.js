@@ -79,11 +79,17 @@ function toggleLight() {
 		document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("mode", "dark");
 		//setHighlightTheme("dark");
+    document.querySelectorAll(".light-toggle").forEach(function(el) {
+      el.setAttribute("aria-pressed", "false");
+    });
 	}
 	if (mode == "dark") {
 		document.documentElement.setAttribute("data-theme", "light");
 		localStorage.setItem("mode", "light");
 		//setHighlightTheme("light");
+    document.querySelectorAll(".light-toggle").forEach(function(el) {
+      el.setAttribute("aria-pressed", "true");
+    });
 	}
 }
 
