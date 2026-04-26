@@ -471,7 +471,7 @@ header > details > summary {
 /*************/
 
 form {
-    overflow: hidden;
+    padding: 2px;
 }
 
 fieldset {
